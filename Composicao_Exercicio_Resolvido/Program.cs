@@ -44,6 +44,7 @@ namespace Composicao_Exercicio_Resolvido
                 valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Duration (Hours): ");
                 hours = int.Parse(Console.ReadLine());
+
                 HourContract contract = new HourContract(date, valuePerHour, hours);
                 worker.AddContract(contract);
             }
